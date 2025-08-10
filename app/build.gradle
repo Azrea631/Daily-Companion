@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace "com.azrea631.dailycompanion"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.azrea631.dailycompanion"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "0.1"
+    }
+
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.3'
+    }
+    kotlinOptions { 
+        jvmTarget = '1.8' 
+    }
+}
+
+dependencies {
+    implementation "androidx.core:core-ktx:1.11.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.1"
+
+    // Jetpack Compose
+    implementation "androidx.activity:activity-compose:1.8.0"
+    implementation "androidx.compose.ui:ui:1.5.0"
+    implementation "androidx.compose.material:material:1.5.0"
+    implementation "androidx.compose.ui:ui-tooling-preview:1.5.0"
+    debugImplementation "androidx.compose.ui:ui-tooling:1.5.0"
+
+    // Navigation Compose
+    implementation "androidx.navigation:navigation-compose:2.7.0"
+
+    // Coroutines + OkHttp for network
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+    implementation "com.squareup.okhttp3:okhttp:4.11.0"
+    implementation "com.squareup.moshi:moshi:1.16.0"
+    implementation "com.squareup.moshi:moshi-kotlin:1.16.0"
+
+    // Data storage (simple)
+    implementation "androidx.datastore:datastore-preferences:1.1.0-alpha05"
+}
