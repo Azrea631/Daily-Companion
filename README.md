@@ -1,4 +1,4 @@
-# Daily Companion Version 1.0.0
+# Azrea Personal Daily Companion Version 1.0.0
 
 **An Prototype Android companion app to keep you organized, informed, and motivated — entirely mobile-built.**
 
