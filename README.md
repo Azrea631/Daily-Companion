@@ -13,3 +13,4 @@
 - Google Calendar integration for event notifications (planned)  
 - Sleek Material Design-inspired multi-page UI with animations and dropdowns  
 - Settings for notification times, temperature thresholds, themes, and cloud sync options  
+- More features will be planned and released as development goes on. 
